@@ -1,13 +1,15 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom"
-import Layout from "./Layout"
+import Layout from "./Layout";
+import Login from "./pages/Login";
 
 const App=()=>{
-  return(
+  return( 
     <>
 
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout/>} >
+      <Route path="Login" element={<Login/>} />
 
       </Route>
 
@@ -15,6 +17,6 @@ const App=()=>{
     </BrowserRouter>
 
     </>
-  )
+  ) 
 }
 export default App;
